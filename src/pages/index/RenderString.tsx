@@ -11,7 +11,7 @@ export default class RenderString extends Component<IProps, IState> {
   }
   render() {
     const { doc } = this.props;
-    Array.isArray(doc) &&
+    return Array.isArray(doc) &&
       doc.map(dom => {
         if (dom.type === 'text') {
           console.log(dom);
